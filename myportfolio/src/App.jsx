@@ -6,21 +6,17 @@ export default function Portfolio() {
   const[skills, setSkills] = useState([]);
   const [projects, setProjects] = useState([]);
    const [menuOpen, setMenuOpen] = useState(false);
-  useEffect(() => {
-    fetch('http://localhost:3000/skills')
-      .then(response => response.json())
-      .then(data => {
-        setSkills(data);})
-      .catch(error => console.error('Error fetching data:', error));
-  }, []);
+  
   const skillsList = skills.map(skill => (
     <Skills key={skill.id} logo={skill.logo} name={skill.name} description={skill.description} />
   ));
   useEffect(() => {
-    fetch('http://localhost:3000/projects')
+    fetch('/data/dummyData.json')
       .then(response => response.json())
       .then(data => {
-        setProjects(data);})
+        setSkills(data.Skills);
+        setProjects(data.projects);
+      })
       .catch(error => console.error('Error fetching data:', error));
   }, []);
   
