@@ -1,0 +1,36 @@
+{
+  "Skills": [
+    {"id": 1, "logo": "fa-solid fa-code icon", "name": "Frontend Development", "description": "HTML, CSS, JavaScript, React"},
+    {"id": 2, "logo": "fa-solid fa-server icon", "name": "Backend Development", "description": "Node.js, Python, MongoDB"},
+    {"id": 3, "logo": "fa-solid fa-pen-ruler icon", "name": "UI/UX Design", "description": "Figma, Adobe XD, Prototyping"},
+    {"id": 4, "logo": "fa-solid fa-c icon", "name": "C Programming", "description": "C, Data Structures"},
+    {"id": 5, "logo": "fa-brands fa-java icon", "name": "Java", "description": "Java, Object-Oriented Programming"},
+    {"id": 6, "logo": "fa-brands fa-git-alt icon", "name": "Git & GitHub", "description": "Version Control, Repository Management"},
+    {"id": 7, "logo": "fa-solid fa-code icon", "name": "VS Code", "description": "Code Editing, Extensions, Debugging"}
+  ],
+   "projects": [
+    {
+      "id": 1,
+      "image":"/pic/project1.png",
+      "name": "Personal Portfolio Website",
+      "description": "A responsive personal portfolio website to showcase my skills, projects, and contact information using HTML, CSS, and JavaScript."
+    },
+    {
+      "id": 2,
+      "image":"/pic/project2.png",
+      "name": "Yamaha Website Clone",
+      "description": "A frontend clone of the Yamaha website created to practice layout design, responsiveness, and modern UI using HTML and CSS."
+    },
+    {
+      "id": 3,
+      "image":"/pic/project3.png",
+      "name": "Simple To-Do List App",
+      "description": "A basic to-do list application that allows users to add, delete, and manage daily tasks using JavaScript."
+    },
+    {
+      "id": 4,
+      "image":"/pic/project4.jpg",
+      "name": "Simple Login Page",
+      "description": "A login system built with Node.js backend that handles user authentication using sessions and cookies to maintain user login state."
+    }]
+}
