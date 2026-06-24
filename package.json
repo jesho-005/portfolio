@@ -13,6 +13,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "vite": "^8.0.3"
