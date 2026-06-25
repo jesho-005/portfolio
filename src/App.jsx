@@ -11,7 +11,7 @@ export default function Portfolio() {
     <Skills key={skill.id} logo={skill.logo} name={skill.name} description={skill.description} />
   ));
   useEffect(() => {
-    fetch('/data/dummyData.json')
+   fetch(`${import.meta.env.BASE_URL}data/dummyData.json`)
       .then(response => response.json())
       .then(data => {
         setSkills(data.Skills);
@@ -40,7 +40,11 @@ export default function Portfolio() {
 </div>
    <div className="main">
     <div className="image">
-      <img src="./src/assets/prof-img.jpeg" alt=""  className='prof-img'/>
+      <img
+  src={`${import.meta.env.BASE_URL}prof-img.jpeg`}
+  alt=""
+  className="prof-img"
+/>
     </div>
     <div className="intro">
   <h2>Hello, I’m </h2>
@@ -48,7 +52,7 @@ export default function Portfolio() {
   <h3>And I'm a <span className='highlight'>Web developer</span></h3>
 <p>I create modern, scalable, and responsive web applications using MongoDB, Express.js, React.js, and Node.js (MERN stack).</p>
 <p className='up'>I’m passionate about turning ideas into interactive and engaging digital experiences.</p>
-<a href="./src/resume.pdf" download className="download-btn">Download CV</a>
+    <a href={`${import.meta.env.BASE_URL}resume.pdf`} download className="download-btn">Download CV</a>
     </div>
    </div>
    </section>
