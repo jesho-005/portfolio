@@ -420,6 +420,18 @@ section {
   color: var(--muted);
 }
 
+.contact-item a {
+  color: #14355c;
+  text-decoration: underline;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.contact-item a:hover,
+.contact-item a:focus-visible {
+  color: #185a8a;
+  opacity: 0.95;
+}
+
 .contact-form form {
   display: grid;
   gap: 18px;
@@ -531,6 +543,7 @@ section {
 
   .hero-copy {
     order: 2;
+    padding-right: 6px;
   }
 
   .hero-visual {
@@ -538,19 +551,37 @@ section {
   }
 
   .hero-copy h1 {
-    font-size: clamp(2.3rem, 9vw, 3rem);
+    font-size: clamp(2.1rem, 9vw, 2.8rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
+    max-width: 100%;
   }
 
   .hero-copy h3 {
-    font-size: 1.05rem;
+    font-size: 1.08rem;
+    line-height: 1.6;
+    margin-bottom: 18px;
   }
 
   .hero-copy p {
     font-size: 1rem;
+    line-height: 1.9;
+    margin-bottom: 24px;
+    max-width: 100%;
+    letter-spacing: 0.01em;
+  }
+
+  .hero-copy h2 {
+    font-size: 0.82rem;
+    letter-spacing: 0.22em;
+    margin-bottom: 10px;
   }
 
   .hero-card {
     width: 100%;
+    max-width: 320px;
+    margin-inline: auto;
   }
 
   .about-grid,
@@ -594,19 +625,27 @@ section {
   }
 
   .hero-copy h1 {
-    font-size: clamp(2.2rem, 8vw, 3rem);
+    font-size: clamp(2rem, 8vw, 2.6rem);
+    line-height: 1.08;
   }
 
   .hero-copy h3 {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+    line-height: 1.55;
   }
 
   .hero-copy p {
-    font-size: 0.98rem;
+    font-size: 1rem;
+    line-height: 1.95;
+    margin-bottom: 24px;
   }
 
   .hero {
     gap: 26px;
+  }
+
+  .hero-copy {
+    padding-right: 0;
   }
 
   .hero-card {
